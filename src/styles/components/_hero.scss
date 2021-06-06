@@ -1,0 +1,40 @@
+.hero-- {
+  &main {
+    padding: 4.5rem 10vw;
+  }
+
+  &bg-dec {
+    width: 50%;
+    height: 40%;
+    background-color: #f5faff;
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+  }
+
+  &content {
+    width: 40%;
+    margin-right: 10%;
+  }
+
+  &img {
+    max-width: 50%;
+  }
+}
+
+@include phone-only {
+  .hero-- {
+    &main {
+      padding: 2.5rem 1.5rem;
+    }
+
+    &content {
+      width: 100%;
+      margin: 0;
+    }
+
+    &img {
+      max-width: 100%;
+    }
+  }
+}
