@@ -1,12 +1,8 @@
 .hero-- {
-  &main {
-    padding: 4.5rem 10vw;
-  }
-
   &bg-dec {
     width: 50%;
     height: 40%;
-    background-color: #f5faff;
+    background-color: $off-white-1;
     position: absolute;
     z-index: -1;
     right: 0px;
@@ -24,10 +20,6 @@
 
 @include phone-only {
   .hero-- {
-    &main {
-      padding: 2.5rem 1.5rem;
-    }
-
     &content {
       width: 100%;
       margin: 0;
