@@ -6,8 +6,9 @@ import Events from "pages/events";
 import Facilities from "pages/facilities";
 import People from "pages/people";
 import Research from "pages/research";
-import NavBar from "./components/navbar";
-import Home from "./pages/home";
+import NavBar from "components/navbar";
+import Home from "pages/home";
+import Footer from "components/footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/events" component={Events} />
         <Route exact path="/people" component={People} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }

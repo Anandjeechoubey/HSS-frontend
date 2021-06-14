@@ -30,6 +30,7 @@ function EventList() {
         <Card key={index} className="event-list--card">
           <Card.Img variant="top" src={event.img} />
           <Card.Body>
+            <p className="event-list--date">23 July 2000</p>
             <Card.Title className="event-list--title">{event.title}</Card.Title>
             <Card.Text className="event-list--desc">{event.desc}</Card.Text>
           </Card.Body>
