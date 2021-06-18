@@ -19,9 +19,11 @@ export default function OverflowCard({ heading, content, indent, url, img }) {
       >
         <h1 className="ofc--heading">{heading}</h1>
         <p className="ofc--para">{content}</p>
-        <Button variant="outline-primary" href={url}>
-          Know More
-        </Button>
+        {url && (
+          <Button variant="outline-primary" href={url}>
+            Know More
+          </Button>
+        )}
       </div>
     </Container>
   );

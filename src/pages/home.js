@@ -20,10 +20,7 @@ function Home() {
 
       <Announcements />
 
-      <section
-        className="padded-container d-flex align-items-center flex-wrap flex-md-nowrap"
-        style={{ background: "rgba(251, 251, 253, 1)" }}
-      >
+      <section className="padded-container d-flex align-items-center flex-wrap flex-md-nowrap grey-section">
         <img className="home--hist-img" src={history} />
         <div>
           <h1 className="section-heading">Our History</h1>
@@ -92,11 +89,6 @@ function Home() {
           College of Civil Engineering in 1854.
         </p>
         <PhdCard />
-        <div className="d-flex justify-content-center mt-5">
-          <Button variant="outline-primary" href="#">
-            View More
-          </Button>
-        </div>
       </section>
     </>
   );

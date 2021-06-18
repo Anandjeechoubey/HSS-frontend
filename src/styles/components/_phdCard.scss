@@ -1,4 +1,11 @@
 .phd-- {
+  &grid {
+    display: grid;
+    align-items: stretch;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   &card {
     max-width: 22.5rem;
     display: grid;
@@ -8,6 +15,7 @@
     border-radius: 4px;
     position: relative;
     overflow: hidden;
+    margin: 1.25rem;
   }
 
   &dp {
@@ -49,6 +57,7 @@
 
   &content {
     @extend .phd--label;
+    width: auto;
     grid-column: 2/5;
     color: $heading-blue;
     margin-left: 2rem;
@@ -56,7 +65,7 @@
 
   &hr {
     opacity: 0.2;
-    border: 1px solid #000000;
+    border-top: 1px solid #000000;
     grid-column: 1/5;
     margin: 1.875rem 0;
   }

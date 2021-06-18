@@ -17,6 +17,10 @@
   text-align: justify;
 }
 
+.grey-section {
+  background: rgba(251, 251, 253, 1);
+}
+
 @include phone-only {
   .padded-container {
     padding: 2.5rem 1.5rem;
