@@ -63,10 +63,7 @@ function About() {
         </p>
       </HeroSection>
 
-      <section
-        className="padded-container d-flex align-items-center flex-wrap flex-md-nowrap"
-        style={{ background: "rgba(251, 251, 253, 1)" }}
-      >
+      <section className="padded-container d-flex align-items-center flex-wrap flex-md-nowrap grey-section">
         <img className="home--hist-img" src={history} />
         <div className="ofc--card about--history-card">
           <h1 className="section-heading">Our History</h1>

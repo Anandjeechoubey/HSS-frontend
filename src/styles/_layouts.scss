@@ -21,6 +21,10 @@
   background: rgba(251, 251, 253, 1);
 }
 
+.dp-shadow {
+  filter: drop-shadow(20px 20px 60px rgba(21, 27, 59, 0.2));
+}
+
 @include phone-only {
   .padded-container {
     padding: 2.5rem 1.5rem;
