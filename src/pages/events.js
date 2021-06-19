@@ -1,5 +1,7 @@
 import React from "react";
 import HeroSection from "components/hero";
+import history from "assets/images/history.png";
+import Button from "react-bootstrap/Button";
 
 function Events() {
   return (
@@ -14,6 +16,74 @@ function Events() {
           department’s faculty research presentation has also been revamped.
         </p>
       </HeroSection>
+
+      <section className="padded-container d-flex align-items-center flex-wrap flex-md-nowrap grey-section">
+        <img className="home--hist-img" src={history} />
+        <div>
+          <h1 className="section-heading">Conferences-workshops</h1>
+          <p className="section-content">
+            Department of Humanities and Social Sciences maintains the
+            collection of several economic databases as an attempt to render its
+            dedicated support to the students, researchers and faculties. This
+            endeavour provides cutting- edge information for research and
+            teaching in Economics.
+          </p>
+          <Button variant="outline-primary" href="#">
+            View More
+          </Button>
+        </div>
+      </section>
+
+      <section className="padded-container d-flex align-items-center flex-wrap flex-md-nowrap">
+        <div>
+          <h1 className="section-heading">Honors and Awards</h1>
+          <p className="section-content">
+            In a globalized world where high proficiency of English is a
+            pre-requisite for professional success, the state-of-the-art
+            Language Laboratory at the department of Humanities & Social
+            Sciences helps the undergraduate and post-graduate students of IIT
+            acquire advanced levels of spoken English language skills.
+          </p>
+          <Button variant="outline-primary" href="#">
+            View More
+          </Button>
+        </div>
+        <img className="home--hist-img mr-0 ml-5" src={history} />
+      </section>
+
+      <section className="padded-container d-flex align-items-center flex-wrap flex-md-nowrap grey-section">
+        <img className="home--hist-img" src={history} />
+        <div>
+          <h1 className="section-heading">Activities</h1>
+          <p className="section-content">
+            Department of Humanities and Social Sciences maintains the
+            collection of several economic databases as an attempt to render its
+            dedicated support to the students, researchers and faculties. This
+            endeavour provides cutting- edge information for research and
+            teaching in Economics.
+          </p>
+          <Button variant="outline-primary" href="#">
+            View More
+          </Button>
+        </div>
+      </section>
+
+      <section className="padded-container d-flex align-items-center flex-wrap flex-md-nowrap">
+        <div>
+          <h1 className="section-heading">Talks</h1>
+          <p className="section-content">
+            In a globalized world where high proficiency of English is a
+            pre-requisite for professional success, the state-of-the-art
+            Language Laboratory at the department of Humanities & Social
+            Sciences helps the undergraduate and post-graduate students of IIT
+            acquire advanced levels of spoken English language skills.
+          </p>
+          <Button variant="outline-primary" href="#">
+            View More
+          </Button>
+        </div>
+        <img className="home--hist-img mr-0 ml-5" src={history} />
+      </section>
     </>
   );
 }
