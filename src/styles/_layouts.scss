@@ -11,6 +11,11 @@
   margin-bottom: 3rem;
 }
 
+.section-heading-sm {
+  @extend .section-heading;
+  font-size: 1.8rem;
+}
+
 .section-content {
   font: 400 1.25rem/2.125rem "DM Sans";
   color: $light-blue;

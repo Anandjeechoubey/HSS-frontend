@@ -1,12 +1,29 @@
+import React from "react";
 import Announcements from "components/announcements";
 import HeroSection from "components/hero";
-import React from "react";
 import history from "assets/images/history.png";
 import EventList from "components/eventList";
 import Button from "react-bootstrap/Button";
 import OverflowCard from "components/overflowCard";
 import talks from "assets/images/talks.png";
 import PhdCard from "components/phdCard";
+
+const AnnouncementList = [
+  {
+    spons: "Sponsored by: IIT Roorkee",
+    title:
+      "Slotwise Interview shedule for Ph.D admission, Autumn Semester 2021-22",
+    date: "Posted On: 18th May 2021",
+    link: "#",
+  },
+  {
+    spons: "Sponsored by: IIT Roorkee",
+    title:
+      "List of Shortlised Candidates for PhD admission, Autumn semester 2021-22",
+    date: "Posted On: 19th May 2021",
+    link: "#",
+  },
+];
 
 function Home() {
   return (
@@ -18,7 +35,10 @@ function Home() {
         </div>
       </HeroSection>
 
-      <Announcements />
+      <section className="padded-container">
+        <h2 className="section-heading">Announcements</h2>
+        <Announcements list={AnnouncementList} />
+      </section>
 
       <section className="padded-container d-flex align-items-center flex-wrap flex-md-nowrap grey-section">
         <img className="home--hist-img" src={history} />
