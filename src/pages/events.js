@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "components/hero";
 import history from "assets/images/history.png";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 function Events() {
   return (
@@ -28,9 +29,9 @@ function Events() {
             endeavour provides cutting- edge information for research and
             teaching in Economics.
           </p>
-          <Button variant="outline-primary" href="#">
-            View More
-          </Button>
+          <Link to="/events/workshops">
+            <Button variant="outline-primary">View More</Button>
+          </Link>
         </div>
       </section>
 
