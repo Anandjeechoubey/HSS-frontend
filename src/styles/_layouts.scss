@@ -30,6 +30,17 @@
   filter: drop-shadow(20px 20px 60px rgba(21, 27, 59, 0.2));
 }
 
+.max-width-800 {
+  max-width: 800px;
+}
+
+.eco-db-- {
+  &hero {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @include phone-only {
   .padded-container {
     padding: 2.5rem 1.5rem;

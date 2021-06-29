@@ -59,7 +59,7 @@ function Home() {
 
       <section className="padded-container">
         <h1 className="section-heading">News and Events</h1>
-        <p className="section-content" style={{ maxWidth: "800px" }}>
+        <p className="section-content max-width-800">
           Indian Institute of Technology Roorkee has its roots in the Roorkee
           College, which was set up in 1847. It was renamed as the Thomason
           College of Civil Engineering in 1854.
@@ -74,10 +74,7 @@ function Home() {
 
       <section className="padded-container">
         <h1 className="section-heading text-center">Prospective Students</h1>
-        <p
-          className="section-content mx-auto text-center"
-          style={{ maxWidth: "800px" }}
-        >
+        <p className="section-content mx-auto text-center max-width-800">
           Indian Institute of Technology Roorkee has its roots in the Roorkee
           College, which was set up in 1847. It was renamed as the Thomason
           College of Civil Engineering in 1854. The College laid the foundation
@@ -103,7 +100,7 @@ function Home() {
 
       <section className="padded-container">
         <h1 className="section-heading">Ph.D. Awarded</h1>
-        <p className="section-content" style={{ maxWidth: "800px" }}>
+        <p className="section-content max-width-800">
           Indian Institute of Technology Roorkee has its roots in the Roorkee
           College, which was set up in 1847. It was renamed as the Thomason
           College of Civil Engineering in 1854.

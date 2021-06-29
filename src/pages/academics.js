@@ -24,7 +24,7 @@ function Academics() {
 
       <section className="padded-container">
         <h1 className="section-heading ">Programs Offered</h1>
-        <p className="section-content" style={{ maxWidth: "50rem" }}>
+        <p className="section-content max-width-800">
           The Department welcomes students who are interested to pursue a PhD in
           any of the area of humanities and social sciences. The Economics
           discipline now admits a limited set of students in the M.Sc. programme
@@ -125,7 +125,7 @@ function Academics() {
 
       <section className="padded-container grey-section">
         <h1 className="section-heading mb-4">Admissions</h1>
-        <p className="section-content" style={{ maxWidth: "50rem" }}>
+        <p className="section-content max-width-800">
           The department offers a post-graduate M.Sc. course in Economics and a
           PhD course in the disciplines of English, Economics, Sociology,
           Psychology and Fine Arts.

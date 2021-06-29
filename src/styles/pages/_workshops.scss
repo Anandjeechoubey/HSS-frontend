@@ -42,3 +42,16 @@
     grid-row-gap: 2.25rem;
   }
 }
+
+.awardee-names {
+  color: #1b2d45;
+  font: 500 1.25rem/2rem Domaine Display Test;
+  border-bottom: 1px solid #e8ebef;
+  padding: 1rem 0;
+  list-style-position: inside;
+  p {
+    color: #435579;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}

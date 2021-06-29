@@ -45,9 +45,9 @@ function Events() {
             Sciences helps the undergraduate and post-graduate students of IIT
             acquire advanced levels of spoken English language skills.
           </p>
-          <Button variant="outline-primary" href="#">
-            View More
-          </Button>
+          <Link to="/events/awards-and-honors">
+            <Button variant="outline-primary">View More</Button>
+          </Link>
         </div>
         <img className="home--hist-img mr-0 ml-5" src={history} />
       </section>
@@ -79,9 +79,9 @@ function Events() {
             Sciences helps the undergraduate and post-graduate students of IIT
             acquire advanced levels of spoken English language skills.
           </p>
-          <Button variant="outline-primary" href="#">
-            View More
-          </Button>
+          <Link to="/events/talks">
+            <Button variant="outline-primary">View More</Button>
+          </Link>
         </div>
         <img className="home--hist-img mr-0 ml-5" src={history} />
       </section>

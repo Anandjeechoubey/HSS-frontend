@@ -11,6 +11,10 @@ import Home from "pages/home";
 import Workshops from "pages/workshops";
 import NavBar from "components/navbar";
 import Footer from "components/footer";
+import Talks from "pages/talks";
+import AwardsAndHonors from "pages/awardsAndHonors";
+import EconomicDB from "pages/economicDB";
+import DeptLibrary from "pages/deptLibrary";
 
 function App() {
   return (
@@ -22,8 +26,12 @@ function App() {
         <Route exact path="/academics" component={Academics} />
         <Route exact path="/research" component={Research} />
         <Route exact path="/facilities" component={Facilities} />
+        <Route exact path="/facilities/economic-database" component={EconomicDB} />
+        <Route exact path="/facilities/departmental-library" component={DeptLibrary} />
         <Route exact path="/events" component={Events} />
         <Route exact path="/events/workshops" component={Workshops} />
+        <Route exact path="/events/talks" component={Talks} />
+        <Route exact path="/events/awards-and-honors" component={AwardsAndHonors} />
         <Route exact path="/people" component={People} />
       </Switch>
       <Footer />
