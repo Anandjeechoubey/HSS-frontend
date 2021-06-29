@@ -1,6 +1,6 @@
 import React from "react";
 
-function Faculty({ name, desg, image }) {
+function MemberCard({ name, desg, image }) {
   return (
     <div className="fac--card">
       <img className="fac--img" alt={name} src={image} />
@@ -10,4 +10,4 @@ function Faculty({ name, desg, image }) {
   );
 }
 
-export default Faculty;
+export default MemberCard;

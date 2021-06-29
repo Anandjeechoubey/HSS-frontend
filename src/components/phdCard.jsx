@@ -12,8 +12,7 @@ const phds = [
     email: "nagendra.kumar@hs.iitr.ac.in",
     discipline: "Financial Economics",
     supervisors: "Prof. Binod Mishra & Prof. P. Jha",
-    topic:
-      "PARADIGM OF POWER POLITICS AND LANGUAGE  IN THE NOVELS OF ARUNDHATI ROY AND ARAVIND ADIGA",
+    topic: "PARADIGM OF POWER POLITICS AND LANGUAGE  IN THE NOVELS OF ARUNDHATI ROY AND ARAVIND ADIGA",
     url: "#",
   },
   {
@@ -22,8 +21,7 @@ const phds = [
     email: "",
     discipline: "Psychology",
     supervisors: "Prof. Ram Manohar Singh & Prof. Renu Rastogi",
-    topic:
-      " EFFECT OF LEADER-MEMBER EXCHANGE AND WORK ENGAGEMENT ON OCB: ROLE OF JOB EMBEDDEDNESS",
+    topic: " EFFECT OF LEADER-MEMBER EXCHANGE AND WORK ENGAGEMENT ON OCB: ROLE OF JOB EMBEDDEDNESS",
     url: "#",
   },
   {
@@ -32,8 +30,7 @@ const phds = [
     email: "nagendra.kumar@hs.iitr.ac.in",
     discipline: "Financial Economics",
     supervisors: "Prof. Ram Manohar Singh & Prof. Renu Rastogi",
-    topic:
-      "Agricultural Extension Services and their impact on Agricultural Productivity in Western U.P",
+    topic: "Agricultural Extension Services and their impact on Agricultural Productivity in Western U.P",
     url: "#",
   },
   {
@@ -42,8 +39,7 @@ const phds = [
     email: "nagendra.kumar@hs.iitr.ac.in",
     discipline: "Financial Economics",
     supervisors: "Prof. Ram Manohar Singh & Prof. Renu Rastogi",
-    topic:
-      "Agricultural Extension Services and their impact on Agricultural Productivity in Western U.P",
+    topic: "Agricultural Extension Services and their impact on Agricultural Productivity in Western U.P",
     url: "#",
   },
   {
@@ -52,8 +48,7 @@ const phds = [
     email: "nagendra.kumar@hs.iitr.ac.in",
     discipline: "Financial Economics",
     supervisors: "Prof. Ram Manohar Singh & Prof. Renu Rastogi",
-    topic:
-      "Agricultural Extension Services and their impact on Agricultural Productivity in Western U.P",
+    topic: "Agricultural Extension Services and their impact on Agricultural Productivity in Western U.P",
     url: "#",
   },
   {
@@ -62,15 +57,13 @@ const phds = [
     email: "nagendra.kumar@hs.iitr.ac.in",
     discipline: "Financial Economics",
     supervisors: "Prof. Ram Manohar Singh & Prof. Renu Rastogi",
-    topic:
-      "Agricultural Extension Services and their impact on Agricultural Productivity in Western U.P",
+    topic: "Agricultural Extension Services and their impact on Agricultural Productivity in Western U.P",
     url: "#",
   },
 ];
 export default function PhdCard() {
   const [showAll, setShowAll] = useState(false);
 
-  console.log(showAll);
   return (
     <>
       <div className="phd--grid mt-5">
@@ -95,10 +88,7 @@ export default function PhdCard() {
               </div>
               <div className="phd--hr" />
               <p className="phd--label phd--full">Thesis Topic</p>
-              <p
-                className="phd--content phd--full mb-5"
-                style={{ fontSize: "0.875rem" }}
-              >
+              <p className="phd--content phd--full mb-5" style={{ fontSize: "0.875rem" }}>
                 {item.topic}
               </p>
               <div className="phd--cta phd--full d-flex justify-content-center">
