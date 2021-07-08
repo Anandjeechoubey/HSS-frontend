@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Announcements from "components/announcements";
 import HeroSection from "components/hero";
 import history from "assets/images/history.png";
@@ -7,25 +7,20 @@ import Button from "react-bootstrap/Button";
 import OverflowCard from "components/overflowCard";
 import talks from "assets/images/talks.png";
 import PhdCard from "components/phdCard";
-
-const AnnouncementList = [
-  {
-    spons: "Sponsored by: IIT Roorkee",
-    title:
-      "Slotwise Interview shedule for Ph.D admission, Autumn Semester 2021-22",
-    date: "Posted On: 18th May 2021",
-    link: "#",
-  },
-  {
-    spons: "Sponsored by: IIT Roorkee",
-    title:
-      "List of Shortlised Candidates for PhD admission, Autumn semester 2021-22",
-    date: "Posted On: 19th May 2021",
-    link: "#",
-  },
-];
+import { GetAnnouncements } from "../apis/restAPIs";
 
 function Home() {
+  const [annList, setAnnList] = useState([]);
+
+  const GetData = async () => {
+    const { data } = await GetAnnouncements();
+    setAnnList(data);
+  };
+
+  useEffect(() => {
+    GetData();
+  }, []);
+
   return (
     <>
       <HeroSection>
@@ -37,7 +32,7 @@ function Home() {
 
       <section className="padded-container">
         <h2 className="section-heading">Announcements</h2>
-        <Announcements list={AnnouncementList} />
+        <Announcements list={annList} />
       </section>
 
       <section className="padded-container d-flex align-items-center flex-wrap flex-md-nowrap grey-section">
@@ -45,14 +40,9 @@ function Home() {
         <div>
           <h1 className="section-heading">Our History</h1>
           <p className="section-content">
-            Indian Institute of Technology Roorkee has its roots in the Roorkee
-            College, which was set up in 1847. It was renamed as the Thomason
-            College of Civil Engineering in 1854. The College laid the
-            foundation of modern engineering education and the use of civil
-            engineering practices in the infrastructure development of country.
-            It got elevated as the first Technical University of the country in
-            1948 through the University of Roorkee Act, 1947 passed by the
-            United Provinces Legislature.
+            Indian Institute of Technology Roorkee has its roots in the Roorkee College, which was set up in 1847. It was renamed as the Thomason College of Civil Engineering in 1854. The College laid
+            the foundation of modern engineering education and the use of civil engineering practices in the infrastructure development of country. It got elevated as the first Technical University of
+            the country in 1948 through the University of Roorkee Act, 1947 passed by the United Provinces Legislature.
           </p>
         </div>
       </section>
@@ -60,9 +50,7 @@ function Home() {
       <section className="padded-container">
         <h1 className="section-heading">News and Events</h1>
         <p className="section-content max-width-800">
-          Indian Institute of Technology Roorkee has its roots in the Roorkee
-          College, which was set up in 1847. It was renamed as the Thomason
-          College of Civil Engineering in 1854.
+          Indian Institute of Technology Roorkee has its roots in the Roorkee College, which was set up in 1847. It was renamed as the Thomason College of Civil Engineering in 1854.
         </p>
         <EventList />
         <div className="d-flex justify-content-center mt-5">
@@ -75,10 +63,8 @@ function Home() {
       <section className="padded-container">
         <h1 className="section-heading text-center">Prospective Students</h1>
         <p className="section-content mx-auto text-center max-width-800">
-          Indian Institute of Technology Roorkee has its roots in the Roorkee
-          College, which was set up in 1847. It was renamed as the Thomason
-          College of Civil Engineering in 1854. The College laid the foundation
-          of modern engineering education.
+          Indian Institute of Technology Roorkee has its roots in the Roorkee College, which was set up in 1847. It was renamed as the Thomason College of Civil Engineering in 1854. The College laid
+          the foundation of modern engineering education.
         </p>
         <OverflowCard
           key={1}
@@ -101,9 +87,7 @@ function Home() {
       <section className="padded-container">
         <h1 className="section-heading">Ph.D. Awarded</h1>
         <p className="section-content max-width-800">
-          Indian Institute of Technology Roorkee has its roots in the Roorkee
-          College, which was set up in 1847. It was renamed as the Thomason
-          College of Civil Engineering in 1854.
+          Indian Institute of Technology Roorkee has its roots in the Roorkee College, which was set up in 1847. It was renamed as the Thomason College of Civil Engineering in 1854.
         </p>
         <PhdCard />
       </section>

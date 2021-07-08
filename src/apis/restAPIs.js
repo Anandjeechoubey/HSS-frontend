@@ -2,6 +2,11 @@ import axios from "axios";
 
 const API_BASE_URL = "http://3.6.93.11/api/";
 
+//Home
+export const GetAnnouncements = () => axios.get(`${API_BASE_URL}home/announcements`);
+export const GetNews = () => axios.get(`${API_BASE_URL}home/news`);
+export const GetPhdAwarded = () => axios.get(`${API_BASE_URL}home/phd_awarded`);
+
 // People
 export const GetFacultyList = () => axios.get(`${API_BASE_URL}people/faculties`);
 export const GetStudentList = () => axios.get(`${API_BASE_URL}people/students`);
@@ -16,4 +21,3 @@ export const GetTalks = () => axios.get(`${API_BASE_URL}events/talks`);
 export const GetResearch = () => axios.get(`${API_BASE_URL}research`);
 export const GetAcads = () => axios.get(`${API_BASE_URL}acads`);
 export const GetCommittees = () => axios.get(`${API_BASE_URL}committees`);
-export const GetHome = () => axios.get(`${API_BASE_URL}home`);
