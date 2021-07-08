@@ -15,6 +15,8 @@ import Talks from "pages/talks";
 import AwardsAndHonors from "pages/awardsAndHonors";
 import EconomicDB from "pages/economicDB";
 import DeptLibrary from "pages/deptLibrary";
+import Scholars from "pages/scholars";
+import Faculty from "pages/faculty";
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
         <Route exact path="/events/talks" component={Talks} />
         <Route exact path="/events/awards-and-honors" component={AwardsAndHonors} />
         <Route exact path="/people" component={People} />
+        <Route exact path="/people/research-scholars" component={Scholars} />
+        <Route exact path="/people/faculty" component={Faculty} />
       </Switch>
       <Footer />
     </BrowserRouter>

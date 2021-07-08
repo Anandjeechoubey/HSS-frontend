@@ -45,6 +45,7 @@ const Talks = () => {
           Sciences helps the undergraduate and post-graduate students of IIT acquire advanced levels of spoken English language skills.
         </p>
       </section>
+
       <section className="padded-container">
         <h2 className="phd--name">Special Talks</h2>
         <p className="section-content mb-2 mt-4">Dr. Shahnawaj, Director (S & SE Asia)</p>
