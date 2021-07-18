@@ -21,3 +21,17 @@ export const GetTalks = () => axios.get(`${API_BASE_URL}events/talks`);
 export const GetResearch = () => axios.get(`${API_BASE_URL}research`);
 export const GetAcads = () => axios.get(`${API_BASE_URL}acads`);
 export const GetCommittees = () => axios.get(`${API_BASE_URL}committees`);
+
+/*
+ * Notes
+    - acad api broken
+    - news api empty
+    - phd_awarded: no email
+    - research API mei no link
+    - research mei show more btn usage
+    - loading and error screen UI
+    - footer links
+    - courses API pending
+    - overall content sanity (after hosting)
+    - credits
+*/
